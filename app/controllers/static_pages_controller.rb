@@ -1,6 +1,6 @@
-class WelcomeController < ApplicationController
+class StaticPagesController < ApplicationController
 
-  def index
+  def home
     respond_to do |format|
       format.html
     end

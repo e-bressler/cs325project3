@@ -1,0 +1,21 @@
+%nav.navbar.navbar-inverse.navbar-top.navbar-fixed-top
+  .container-fluid
+    .container
+      .navbar-header
+        %button.navbar-toggle.collapsed{"aria-controls": "navbar", "aria-expanded": "false", "data-target": "#navbar", "data-toggle": "collapse", type: "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand{href: "/"} MySpace: Recycling Edition
+      %ul.nav.navbar-nav.navbar-right
+        %li.dropdown
+          %a.dropdown-toggle#profileMenu{aria: {expanded: false, haspopup: true}, data: {toggle: "dropdown"}, role: "button"}
+            Profile
+            %span.caret
+          %ul.dropdown-menu{aria: {labelledby: 'profileMenu'}}
+            %li= link_to "Edit profile", edit_user_registration_path
+            %li= link_to "Sign up", new_user_registration_path
+            %li= link_to "Login", new_user_session_path
+            %li.divider{role: "separator"}
+            %li= link_to "Logout", destroy_user_session_path, method: :delete
