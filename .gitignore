@@ -26,4 +26,9 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-/.idea
+# RubyMine IDE config files
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
