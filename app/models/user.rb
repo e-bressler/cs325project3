@@ -11,10 +11,26 @@
 # datetime  "updated_at",                         null: false
 #
 class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  rolify
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  # === Validations do ===
+
+  validates_presence_of :email, :username, :encrypted_password
+
+  # === end ===
+
+  # === Associations do ===
+
+  # === end ===
+
+  def is_admin?
+    has_role?(:admin)
+  end
+
+  def is_client?
+    has_role?(:client)
+  end
 
 end

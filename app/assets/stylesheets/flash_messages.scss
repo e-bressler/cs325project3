@@ -1,0 +1,10 @@
+@import 'bootstrap/variables';
+$width: $screen-xs;
+
+.flashes{
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  margin-left: -$width/2;
+  width: $width;
+}

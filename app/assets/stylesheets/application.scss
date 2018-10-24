@@ -20,9 +20,16 @@
 
 
 #main-container {
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  position: absolute;
+  width: 80%;
+  padding: {
+    top: 50px;
+    bottom: 50px;
+  }
+  margin: {
+    left: 10%;
+    right: 10%;
+  }
 }
 
 .devise-container {
@@ -50,4 +57,10 @@ th {
 td {
   background-color: #808080;
   color: white;
+}
+
+.box {
+  border-radius: 25px;
+  background-color: #FFF;
+  padding: 25px;
 }
