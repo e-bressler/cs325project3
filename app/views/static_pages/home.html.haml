@@ -1,5 +1,9 @@
-.block
-  %header.header-group
-    %h2 Welcome
-  .row
-    .col-md-12
+.logo
+  =image_tag('logo.png', width: '100%', height: '100%')
+  =image_tag('title.png', width: '100%', height: '100%')
+
+=link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg"
+=link_to "Log In", new_user_session_path, class: "btn btn-primary btn-lg"
+
+%p
+  © 2018

@@ -7,4 +7,5 @@ $width: $screen-xs;
   left: 50%;
   margin-left: -$width/2;
   width: $width;
+  z-index: 100;
 }

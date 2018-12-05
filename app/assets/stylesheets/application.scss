@@ -14,31 +14,23 @@
  *= require_self
  */
 
+$primary: #330896;
+$secondary: #fd8023;
+
+$btn-primary-bg: $secondary;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 
-
 #main-container {
   position: absolute;
-  width: 80%;
+  width: 100%;
   padding: {
     top: 50px;
     bottom: 50px;
   }
-  margin: {
-    left: 10%;
-    right: 10%;
-  }
-}
-
-.devise-container {
-  width: 345px;
-  padding-left: 15px;
-}
-
-.product-block {
-  width: 750px;
+  text-align: center;
 }
 
 .btn {
@@ -46,21 +38,12 @@
 }
 
 body {
-  background: #f2f2f2;
-}
-
-th {
-  background-color: #333333;
+  background: $primary;
   color: white;
 }
 
-td {
-  background-color: #808080;
-  color: white;
-}
-
-.box {
-  border-radius: 25px;
-  background-color: #FFF;
-  padding: 25px;
+.logo{
+  width: 70%;
+  margin: auto;
+  padding-bottom: 5%;
 }
