@@ -1,3 +1,3 @@
 $ ->
   $(".alert").bind 'click', (ev) =>
-    $(".alert").fadeOut(200)
+    $(".alert").fadeOut(500)
